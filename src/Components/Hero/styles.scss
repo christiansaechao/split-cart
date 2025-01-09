@@ -1,0 +1,120 @@
+.hero-container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .left-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    gap: 15px;
+
+    .hero-text {
+      font-size: 2.8rem;
+      text-align: left;
+      text-transform: capitalize;
+    }
+
+    .how {
+      color: white;
+    }
+
+    .split-text {
+      color: #0dc2ff;
+    }
+
+    h4,
+    h5 {
+      text-align: left;
+    }
+
+    h5 {
+      padding: 5px;
+      border-bottom: 1px solid black;
+    }
+
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      .button {
+        font-size: 0.8rem;
+        padding: 10px 7px;
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &.merchant {
+          background: #0c7ff2;
+          border: 1px solid #0c7ff2;
+          color: white;
+        }
+
+        &.consumer {
+          background: white;
+          border: 1px solid #0c7ff2;
+          color: #0c7ff2;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-container {
+    .left-container {
+      width: 100%;
+      .hero-text {
+        font-size: 2rem;
+      }
+      .buttons-container {
+        width: 100%;
+      }
+    }
+
+    .right-container {
+      display: none;
+    }
+  }
+}
+
+// animations
+@keyframes fade-in-out {
+  0%,
+  20%,
+  100% {
+    opacity: 0;
+  }
+  30%,
+  70% {
+    opacity: 1;
+  }
+}

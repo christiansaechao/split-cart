@@ -1,0 +1,133 @@
+.contact-bg {
+  background: #001a33;
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 80%;
+  padding: 100px 0px;
+  gap: 40px;
+
+  .text-container {
+    text-align: left;
+    width: 30%;
+
+    .title {
+      font-size: 2.5rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .subtext {
+      font-size: 0.9rem;
+      margin: 20px 0px;
+    }
+  }
+
+  .form-container {
+    box-sizing: border-box;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-gap: 30px; /* Space between grid items */
+
+    input,
+    textarea {
+      border: 1px solid transparent;
+      outline: none;
+      padding: 20px;
+      border-radius: 5px;
+    }
+  }
+
+  .first-name,
+  .last-name,
+  .email,
+  .phone-number {
+    grid-column: span 1; /* Each of these will span one column */
+  }
+
+  .company {
+    grid-column: span 2; /* Company input spans across both columns */
+  }
+
+  .comments {
+    grid-column: span 2; /* Textarea spans across both columns */
+    grid-row: span 2; /* Optionally, make the textarea taller */
+    height: 200px;
+    resize: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-bg {
+    background: #001a33;
+    color: white;
+  }
+
+  .contact-container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 80%;
+    padding: 100px 0px;
+    gap: 40px;
+
+    .text-container {
+      text-align: left;
+      width: 30%;
+
+      .title {
+        font-size: 2.5rem;
+        padding: 0;
+        margin: 0;
+      }
+
+      .subtext {
+        font-size: 0.9rem;
+        margin: 20px 0px;
+      }
+    }
+
+    .form-container {
+      box-sizing: border-box;
+      width: 70%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+      grid-gap: 30px; /* Space between grid items */
+
+      input,
+      textarea {
+        border: 1px solid transparent;
+        outline: none;
+        padding: 20px;
+        border-radius: 5px;
+      }
+    }
+
+    .first-name,
+    .last-name,
+    .email,
+    .phone-number {
+      grid-column: span 2; /* Each of these will span one column */
+    }
+
+    .company {
+      grid-column: span 2; /* Company input spans across both columns */
+    }
+
+    .comments {
+      grid-column: span 2; /* Textarea spans across both columns */
+      grid-row: span 2; /* Optionally, make the textarea taller */
+      height: 200px;
+      resize: none;
+    }
+  }
+}

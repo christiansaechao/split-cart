@@ -1,0 +1,40 @@
+.questions-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .question-container {
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 5px 0px;
+
+    .question {
+      padding: 20px 0px;
+      font-size: 1.2rem;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .description {
+      text-align: left;
+      max-height: 0px;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+
+      &.active {
+        display: block;
+        opacity: 1;
+        padding: 10px 0px;
+        max-height: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+}

@@ -1,0 +1,70 @@
+.revenue-background {
+  background: #f3f4f8;
+}
+
+.revenue-container {
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 80px 0px;
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .underline {
+    width: 100px;
+    height: 1px;
+    border-bottom: 3px solid #0dc2ff;
+    margin: 30px auto;
+  }
+
+  .revenue-groups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .group {
+      width: 33%;
+
+      img {
+        width: 50px;
+      }
+
+      .title {
+        color: #2c2c2c;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      .text {
+        font-size: 0.9rem;
+        color: black;
+        margin-bottom: 20px;
+      }
+
+      .percentage {
+        width: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .revenue-container {
+    .revenue-groups {
+      flex-direction: column;
+      gap: 40px;
+
+      .group {
+        padding-top: 10px;
+        border-top: 1px solid grey;
+        width: 100%;
+      }
+    }
+  }
+}

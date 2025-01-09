@@ -1,0 +1,122 @@
+.popular-background {
+  margin: 40px 0px;
+  background: white;
+}
+
+.popular-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+
+  .banner {
+    background: #001a33;
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 20px 0px;
+    color: white;
+    padding: 30px 10px;
+    border-radius: 10px;
+  }
+
+  .purchase-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+
+    .purchase {
+      background: #0c7ff2;
+      border: 1px solid #0c7ff2;
+      border-radius: 10px;
+      padding: 30px;
+      width: 25%;
+      color: white;
+
+      img {
+        width: 50px;
+        background: white;
+        padding: 20px;
+        border-radius: 30%;
+      }
+
+      .title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .sub-text {
+    font-size: 3rem;
+    color: black;
+  }
+
+  .offer-button {
+    font-size: 0.8rem;
+    color: white;
+    background: #0c7ff2;
+    border: 1px solid #0c7ff2;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .popular-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    .banner {
+      background: #001a33;
+      font-size: 2rem;
+      text-align: center;
+      margin: 20px 0px;
+      color: white;
+      padding: 30px 10px;
+      border-radius: 10px;
+    }
+
+    .purchase-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      width: 100%;
+
+      .purchase {
+        background: #0c7ff2;
+        border: 1px solid #0c7ff2;
+        border-radius: 10px;
+        padding: 10px;
+        width: 25%;
+        color: white;
+
+        img {
+          width: 50px;
+          background: white;
+          padding: 5px;
+          border-radius: 30%;
+        }
+
+        .title {
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

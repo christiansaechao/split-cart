@@ -1,0 +1,17 @@
+.cycled-container {
+  padding: 0;
+  display: inline;
+
+  span.inactive {
+    opacity: 0;
+    margin-left: 5px;
+  }
+
+  span.active {
+    opacity: 0;
+    animation: fade-in-out 4s ease-in-out infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+}
